@@ -1,25 +1,5 @@
 'use strict'
 
-// let buttons = document.getElementsByClassName('keys');
-// for (let button of buttons) {
-//     button.addEventListern("click", clickHandler);
-// }
-
-// let displayChars = "0";
-// let display = document.getElementById('display');
-
-// function clickHandler(evt) {
-
-// }
-
-// function main () {
-    
-// }
-  
-// document.addEventListener('DOMContentLoaded', main)
-
-// document.getElementById('display').innerText = 0;
-
 document.getElementById('one').addEventListener('click', function () {
     document.getElementById('display').innerText += '1';
 })
@@ -82,12 +62,8 @@ document.getElementById('clear').addEventListener('click', function () {
 })
 
 document.getElementById('equal').addEventListener('click', function() {
-    let x = document.getElementById('display').innerText;
-    console.log(x);
+    // let x = document.getElementById('display').innerText;
+    // console.log(x);
     let display = eval(document.getElementById('display').innerText);
     document.getElementById('display').innerText = display
 })
-
-// function equal() {
-//     document.getElementById('display').innerText = eval(document.getElementById('display').innerText)
-// }
